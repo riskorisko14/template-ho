@@ -1,0 +1,200 @@
+% ============================================================
+%  config.sty
+%  Replika presisi desain Template_Laporan_Praktikum_Jarkom.docx
+%  Wajib dikompilasi dengan XeLaTeX (menggunakan fontspec)
+% ============================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{config}[2025/01/01 Replika desain Word - Laporan Praktikum Jarkom ITERA]
+
+% ---------------------------------------------------
+% 1. UKURAN HALAMAN & MARGIN (identik dengan file .docx asli)
+%    Dokumen asli berukuran B5 (176mm x 250mm / 9979 x 14175 twips).
+%    Margin cover: 0.665in (~1.69cm). Margin isi: 1in, header/footer 0.5in.
+% ---------------------------------------------------
+\RequirePackage[
+  paperwidth=176mm, paperheight=250mm,
+  top=1.69cm, bottom=1.69cm, left=1.69cm, right=1.69cm
+]{geometry}
+\newcommand{\coverGeometry}{\newgeometry{paperwidth=176mm,paperheight=250mm,top=1.69cm,bottom=1.69cm,left=1.69cm,right=1.69cm}}
+\newcommand{\bodyGeometry}{\newgeometry{paperwidth=176mm,paperheight=250mm,top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm,headheight=14pt,headsep=20pt,footskip=28pt}}
+
+% ---------------------------------------------------
+% 2. FONT (XeLaTeX + fontspec)
+%    Body   : EB Garamond   (pengganti bebas-lisensi untuk "Garamond")
+%    Heading: Archivo Black (pengganti bebas-lisensi untuk "Arial Black")
+% ---------------------------------------------------
+\RequirePackage{fontspec}
+\setmainfont{EBGaramond-Regular.ttf}[
+  Path = fonts/,
+  BoldFont = EBGaramond-Bold.ttf,
+  ItalicFont = EBGaramond-Italic.ttf,
+  BoldItalicFont = EBGaramond-BoldItalic.ttf
+]
+\newfontfamily\headingfont{ArchivoBlack-Regular.ttf}[Path = fonts/]
+\newfontfamily\bodyfont{EBGaramond-Regular.ttf}[
+  Path = fonts/,
+  BoldFont = EBGaramond-Bold.ttf,
+  ItalicFont = EBGaramond-Italic.ttf,
+  BoldItalicFont = EBGaramond-BoldItalic.ttf
+]
+
+\RequirePackage{graphicx}
+\graphicspath{{figures/}}
+
+\RequirePackage{xcolor}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage{caption}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\RequirePackage{colortbl}
+\RequirePackage{tikz}
+\RequirePackage{lastpage}
+\RequirePackage{ragged2e}
+\RequirePackage{amssymb}
+\RequirePackage{float}
+
+% ---------------------------------------------------
+% 3. PALET WARNA (diambil persis dari file .docx: styles.xml & theme1.xml)
+% ---------------------------------------------------
+\definecolor{grayHead}{HTML}{808080}   % Warna abu-abu judul "Title"/"SectionLabel" (Word: color 808080)
+\definecolor{tblHeaderBlue}{HTML}{4F81BD}  % Warna header tabel "Grid Table 4 - Accent 1"
+\definecolor{tblBandBlue}{HTML}{DBE5F1}    % Warna baris selang-seling tabel
+\definecolor{tblBorderBlue}{HTML}{95B3D7}  % Warna garis tabel
+\definecolor{boxGray10}{HTML}{E6E6E6}      % Shading pct10 (kotak judul cover)
+\definecolor{boxGray20}{HTML}{CCCCCC}      % Shading pct20 (kotak "Pertemuan")
+
+% ---------------------------------------------------
+% 4. MAKRO IDENTITAS (EDIT DI main.tex)
+% ---------------------------------------------------
+\newcommand{\praktikumTitle}{Judul Praktikum}
+\newcommand{\praktikumModul}{1}
+\newcommand{\praktikumDate}{September 2026}
+
+\newcommand{\mahasiswaName}{Nama Peserta Praktikum}
+\newcommand{\mahasiswaNIM}{NIM}
+\newcommand{\mahasiswaKelas}{RA/RB/RC/RD}
+
+\newcommand{\asistenSatu}{Nama Asisten Praktikum 1}
+\newcommand{\asistenDua}{Nama Asisten Praktikum 2}
+
+\newcommand{\institusiProdi}{Program Studi Teknik Informatika}
+\newcommand{\institusiFakultas}{Fakultas Teknologi Industri}
+\newcommand{\institusiKampus}{Institut Teknologi Sumatera}
+\newcommand{\institusiAlamat}{Jl. Terusan Ryacudu, Desa Way Hui, Kecamatan Jati Agung, Lampung Selatan -- Lampung 35365}
+\newcommand{\institusiTelp}{+62-721-8030188; 8030189}
+
+% ---------------------------------------------------
+% 5. HEADER & FOOTER HALAMAN ISI
+%    Header asli: "LAPORAN PRAKTIKUM" (Arial Black, small-caps, huruf renggang)
+%    di kiri, "Teknik Informatika ITERA" di kanan, dengan garis bawah tebal
+%    bergaya "thinThick" (dua garis: tipis lalu tebal).
+%    Footer asli: garis tipis + nomor halaman tebal rata kanan.
+% ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % Digambar manual (2 garis) lewat \headrule
+\renewcommand{\footrulewidth}{0pt} % Digambar manual lewat \footrule
+
+\fancyhead[L]{\headingfont\fontsize{7}{9}\selectfont\addfontfeature{LetterSpace=8.0}LAPORAN PRAKTIKUM}
+\fancyhead[R]{\fontsize{8}{10}\selectfont Teknik Informatika ITERA}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{black}\leaders\hrule height 0.5pt\hfill}%
+}
+
+\fancyfoot[R]{\fontsize{9}{11}\selectfont\bfseries\thepage}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{black}\leaders\hrule height 0.5pt\hfill}}
+
+% Gaya halaman kosong (tanpa header/footer) untuk cover
+\fancypagestyle{cover}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \renewcommand{\headrule}{}
+  \renewcommand{\footrule}{}
+}
+
+% ---------------------------------------------------
+% 6. GAYA JUDUL (meniru style "Title"/"SectionLabel" dokumen asli:
+%    Arial Black, abu-abu 808080, tracking rapat, TANPA numbering)
+% ---------------------------------------------------
+\newcommand{\grayTitle}[1]{%
+  {\headingfont\fontsize{22}{26}\selectfont\color{grayHead}\addfontfeature{LetterSpace=-2.0}#1}%
+}
+
+% Judul section konten (meniru paragraf bold 20pt tengah pada Word: "Dokumentasi Praktikum", dsb.)
+\newcommand{\contentHeading}[1]{%
+  \par\vspace{18pt}
+  {\centering\bfseries\fontsize{20}{24}\selectfont #1\par}
+  \vspace{10pt}%
+}
+
+% Sub-judul (meniru "Heading2b": Arial, bold-italic, 12pt, rata kiri-kanan)
+\newcommand{\subHeading}[1]{%
+  \par\vspace{8pt}
+  {\bfseries\itshape\sffamily\fontsize{12}{15}\selectfont #1\par}
+  \vspace{4pt}%
+}
+
+% ---------------------------------------------------
+% 7. CAPTION GAMBAR & TABEL (format "Gambar 1. ..." / "Tabel 1. ...")
+% ---------------------------------------------------
+\captionsetup{
+  labelsep=period,
+  font={small},
+  justification=centering
+}
+\AtBeginDocument{%
+  \renewcommand{\figurename}{Gambar}
+  \renewcommand{\tablename}{Tabel}
+}
+
+% ---------------------------------------------------
+% 8. KOTAK "RANGKUMAN PRAKTIKUM" (meniru tabel 1x1 berbingkai hitam
+%    tipis pada dokumen asli, latar putih)
+% ---------------------------------------------------
+\setlength{\fboxrule}{0.5pt}
+\setlength{\fboxsep}{10pt}
+\newenvironment{rangkumanbox}{%
+  \par\vspace{4pt}
+  \noindent
+  \begin{lrbox}{\rangkumanbuffer}
+  \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule}
+}{%
+  \end{minipage}
+  \end{lrbox}
+  \fbox{\usebox{\rangkumanbuffer}}\par\vspace{4pt}
+}
+\newsavebox{\rangkumanbuffer}
+
+% ---------------------------------------------------
+% 9. TABEL BERGAYA "Grid Table 4 - Accent 1" (header biru + pita terang)
+% ---------------------------------------------------
+% \tblheaderrow : dipasang SEKALI di awal baris header (memberi latar biru)
+% \thc{...}     : membungkus teks tiap sel header (putih + tebal)
+\newcommand{\tblheaderrow}{\rowcolor{tblHeaderBlue}}
+\newcommand{\thc}[1]{{\color{white}\bfseries #1}}
+% \tblbandrow : pita biru muda selang-seling. Overhang warna sengaja dikurangi
+%               0.4pt agar garis vertikal tabel tetap terlihat (tidak tertutup).
+\newcommand{\tblbandrow}{%
+  \rowcolor{tblBandBlue}[\dimexpr\tabcolsep-0.4pt\relax][\dimexpr\tabcolsep-0.4pt\relax]%
+}
+\arrayrulecolor{tblBorderBlue}
+
+% ---------------------------------------------------
+% 10. DAFTAR ITEM: bulat penuh (level 1) & lingkaran kosong "o" (level 2)
+%     -- meniru "List Bullet" & "List Bullet 2" pada dokumen asli
+% ---------------------------------------------------
+\setlist[itemize,1]{label=\textbullet, leftmargin=1.6em, itemsep=4pt, topsep=4pt}
+\setlist[itemize,2]{label=o, leftmargin=1.6em, itemsep=2pt, topsep=2pt}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=2pt, topsep=4pt}
+
+% Baris spasi 1.5 pada paragraf isi (meniru w:spacing line="360" lineRule="auto")
+\linespread{1.28}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+\endinput

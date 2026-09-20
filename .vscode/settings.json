@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\main.aux": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\main.log": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\main.gz": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\main.out": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\handson.aux": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\handson.log": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\handson.gz": true,
+        "**/c:\\Users\\iko iyek\\OneDrive\\Documents\\template-ho\\template-ho\\handson.out": true
+    }
+}

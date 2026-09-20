@@ -1,0 +1,154 @@
+% !TEX program = xelatex
+\documentclass[11pt]{article}
+\usepackage{config}
+
+\renewcommand{\praktikumTitle}{Cabling \& FTP}
+\renewcommand{\praktikumModul}{1}
+\renewcommand{\praktikumDate}{September 2026}
+
+\renewcommand{\mahasiswaName}{Muhammad Sahrur Risko}
+\renewcommand{\mahasiswaKelas}{Rh}
+\renewcommand{\mahasiswaNIM}{125140174}
+
+\renewcommand{\asistenSatu}{Nama Asisten 1}
+\renewcommand{\asistenDua}{Nama Asisten 2}
+
+\begin{document}
+
+\thispagestyle{cover}
+\setcounter{page}{0}
+
+\vspace*{-\baselineskip}
+\noindent\begin{minipage}[t][\dimexpr\textheight-\baselineskip\relax][t]{\linewidth}
+
+\noindent
+\begin{minipage}[t]{0.55\linewidth}
+  \vspace{0pt}
+  {\fontsize{14}{17}\selectfont Laporan Praktikum}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.35\linewidth}
+  \vspace{0pt}
+  \raggedleft
+  \begin{tikzpicture}
+    \node[fill=boxGray20, inner sep=0pt, minimum width=2.6cm, minimum height=2.3cm] (box) {};
+    \node[anchor=north, text=black, font=\fontsize{10}{12}\selectfont] at ([yshift=-3pt]box.north) {Pertemuan};
+    \node[anchor=south, text=white, font=\headingfont\fontsize{46}{46}\selectfont]
+      at ([yshift=-4pt]box.south) {\praktikumModul};
+  \end{tikzpicture}
+\end{minipage}
+
+\vspace{1.0cm}
+
+\noindent{\fontsize{13}{16}\selectfont IF25-21008: JARINGAN KOMPUTER}\par
+\vspace{2pt}
+\noindent\rule{\linewidth}{0.5pt}\par
+\vspace{4pt}
+\noindent{\fontsize{20}{24}\selectfont Laporan Praktikum/Lab}\par
+
+\vspace{1.1cm}
+
+\noindent
+\colorbox{boxGray10}{%
+  \begin{minipage}{\dimexpr\linewidth-2\fboxsep}
+    \vspace{18pt}
+    \centering
+    {\bfseries\fontsize{24}{28}\selectfont \praktikumTitle}
+    \vspace{18pt}
+  \end{minipage}%
+}
+
+\vspace{0.9cm}
+
+\noindent
+\begingroup\linespread{1.0}\selectfont
+\begin{flushright}
+  {\bfseries\fontsize{13}{15.5}\selectfont
+    \mahasiswaName\\
+    \mahasiswaKelas\\
+    \mahasiswaNIM\par}
+  \vspace{12pt}
+  {\bfseries\fontsize{13}{15.5}\selectfont
+    \underline{Tim Asisten}\\
+    \asistenSatu\\
+    \asistenDua\par}
+\end{flushright}
+\endgroup
+
+\vfill
+
+\begingroup\linespread{1.0}\selectfont
+\begin{flushright}
+  {\bfseries\fontsize{13}{15.5}\selectfont
+    Teknik Informatika\\
+    \institusiFakultas\\
+    \institusiKampus\\
+    \praktikumDate\par}
+\end{flushright}
+\endgroup
+
+\vspace{0.35cm}
+
+\noindent
+\raisebox{0pt}[1.6cm][0pt]{%
+  \begin{minipage}[b]{\linewidth}
+    \includegraphics[height=1.55cm]{logo-itera.png}\hspace{0.8cm}%
+    \includegraphics[height=1.0cm]{logo-fti.png}\hspace{0.8cm}%
+    \includegraphics[height=0.86cm]{logo-if.png}\hfill
+  \end{minipage}%
+}
+
+\vspace{0.18cm}
+\noindent\rule{\linewidth}{1pt}
+
+\end{minipage}
+
+\newpage
+\bodyGeometry
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\begin{center}
+  {\fontsize{9}{14}\selectfont\color{grayHead}\addfontfeature{LetterSpace=18.0}FAKULTAS TEKNOLOGI INDUSTRI}\par
+  \vspace{2pt}
+  {\fontsize{9}{14}\selectfont\color{grayHead}\addfontfeature{LetterSpace=18.0}ITERA 2026}\par
+\end{center}
+
+\vspace{1.0cm}
+
+\begin{center}
+  \grayTitle{\praktikumTitle}\par
+\end{center}
+\vspace{6pt}
+\noindent\textcolor{grayHead}{\rule{\linewidth}{0.5pt}}
+
+\vspace{2.0cm}
+
+\begingroup
+\linespread{1.0}\selectfont
+\begin{center}
+  {\bfseries\fontsize{10}{12}\selectfont
+    \mahasiswaName\space (\mahasiswaNIM)\par}
+
+  \vspace{14pt}
+  {\fontsize{10}{12}\selectfont
+    ITERA Laboratory\\
+    \institusiProdi\\
+    \institusiFakultas\\
+    \institusiKampus\par}
+
+  \vspace{8pt}
+  {\fontsize{10}{12}\selectfont
+    Jl. Terusan Ryacudu, Desa Way Hui, Kecamatan Jati Agung,\\
+    Lampung Selatan -- Lampung 35365\\
+    Telp. \institusiTelp\par}
+
+  \vspace{10pt}
+  {\bfseries\fontsize{15}{18}\selectfont \praktikumTitle\par}
+\end{center}
+\endgroup
+
+\newpage
+\input{handson.tex}
+
+\end{document}
