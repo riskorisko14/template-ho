@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.9.20)  20 SEP 2026 21:26
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.9.20)  20 SEP 2026 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1143,8 +1143,10 @@ Underfull \hbox (badness 2334) in paragraph at lines 26--27
 ghubungkan berbagai perangkat jaringan
  []
 
-File: figures/kabel panjang.jpeg Graphic file (type bmp)
-<figures/kabel panjang.jpeg>
+File: figures/kabel panjang before.jpeg Graphic file (type bmp)
+<figures/kabel panjang before.jpeg>
+File: figures/kabel pendek before.jpeg Graphic file (type bmp)
+<figures/kabel pendek before.jpeg>
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 20.59998pt, for example:
@@ -1153,7 +1155,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
 [2]
-Underfull \hbox (badness 6725) in paragraph at lines 37--38
+Underfull \hbox (badness 6725) in paragraph at lines 38--39
 []\TU/EBGaramond-Regular.ttf(0)/m/n/10.95 [RJ45 (Registered Jack 45) berfungsi 
 sebagai konektor fisik standar yang
  []
@@ -1181,10 +1183,8 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
 [4]
-File: figures/dokumentasi-ilustrasi.png Graphic file (type bmp)
-<figures/dokumentasi-ilustrasi.png>
-File: figures/dokumentasi-ilustrasi.png Graphic file (type bmp)
-<figures/dokumentasi-ilustrasi.png>
+File: figures/tang.jpeg Graphic file (type bmp)
+<figures/tang.jpeg>
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1194,6 +1194,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
 [5]
+File: figures/dokumentasi-ilustrasi.png Graphic file (type bmp)
+<figures/dokumentasi-ilustrasi.png>
+File: figures/dokumentasi-ilustrasi.png Graphic file (type bmp)
+<figures/dokumentasi-ilustrasi.png>
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 20.59998pt, for example:
@@ -1201,7 +1206,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
-[6])
+[6]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 20.59998pt, for example:
@@ -1209,7 +1214,15 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
-[7] 
+[7])
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 20.59998pt, for example:
+(fancyhdr)                \setlength{\headheight}{20.59998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
+
+[8] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux)
  ***********
@@ -1225,12 +1238,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24913 strings out of 402560
- 510193 string characters out of 5437303
- 938268 words of memory out of 5000000
- 53647 multiletter control sequences out of 15000+600000
+ 24936 strings out of 402560
+ 510875 string characters out of 5437303
+ 938284 words of memory out of 5000000
+ 53668 multiletter control sequences out of 15000+600000
  636913 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,110p,849b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (8 pages).
+Output written on main.pdf (9 pages).
