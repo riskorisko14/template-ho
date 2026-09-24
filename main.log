@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.9.20)  23 SEP 2026 23:37
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.9.20)  24 SEP 2026 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -823,11 +823,7 @@ File: l3backend-xetex.def 2026-08-10 L3 backend support: XeTeX
 \g__graphics_track_int=\count343
 \g__pdfannot_backend_int=\count344
 \g__pdfannot_backend_link_int=\count345
-) (main.aux
-
-LaTeX Warning: Label `fig:dokumentasi-2' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -1119,30 +1115,30 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 ] (handson.tex
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 4.
-LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 4.
-LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
 (Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 5.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 5.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 6.
 
-Underfull \hbox (badness 2181) in paragraph at lines 10--11
+Underfull \hbox (badness 2181) in paragraph at lines 11--12
 []\TU/EBGaramond-Regular.ttf(0)/m/n/10.95 Proses pembuatan kabel UTP dengan kon
 ektor RJ45 dimulai dengan
  []
 
 
-Underfull \hbox (badness 6741) in paragraph at lines 11--12
+Underfull \hbox (badness 6741) in paragraph at lines 12--13
 []\TU/EBGaramond-Regular.ttf(0)/m/n/10.95 Pengecekan kabel UTP menggunakan alat
  tracker dilakukan dengan
  []
 
 
-Overfull \hbox (1.46pt too wide) in paragraph at lines 3--18
+Overfull \hbox (1.46pt too wide) in paragraph at lines 4--19
  [] 
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 26--27
+Underfull \hbox (badness 2334) in paragraph at lines 27--28
 \TU/EBGaramond-Regular.ttf(0)/m/n/10.95 data berbasis sinyal elektrik untuk men
 ghubungkan berbagai perangkat jaringan
  []
@@ -1194,7 +1190,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
 [5]
-Underfull \hbox (badness 3428) in paragraph at lines 72--72
+Underfull \hbox (badness 3428) in paragraph at lines 73--73
 []\TU/lmss/bx/sl/12 Mengurutkan Kabel UTP dan Menghubungkan dengan
  []
 
@@ -1210,58 +1206,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-6.59998pt}.
 
 [6]
-
-LaTeX Warning: File `buat folder.jpeg' not found on input line 97.
-
-handson.tex:97: Unable to load picture or PDF file '"buat folder.jpeg"'.
-<to be read again> 
-                   }
-l.97 ...cs[width=0.62\linewidth]{buat folder.jpeg}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-handson.tex:97: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ...cs[width=0.62\linewidth]{buat folder.jpeg}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-File: buat folder.jpeg Graphic file (type bmp)
-<buat folder.jpeg>
-
-LaTeX Warning: File `give access.jpeg' not found on input line 107.
-
-handson.tex:107: Unable to load picture or PDF file '"give access.jpeg"'.
-<to be read again> 
-                   }
-l.107 ...s[width=0.62\linewidth]{give access.jpeg}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-handson.tex:107: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 ...s[width=0.62\linewidth]{give access.jpeg}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-File: give access.jpeg Graphic file (type bmp)
-<give access.jpeg>
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 20.59998pt, for example:
@@ -1289,20 +1233,16 @@ L3 programming layer <2026-08-10>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25051 strings out of 402560
- 513791 string characters out of 5437303
- 940341 words of memory out of 5000000
- 53780 multiletter control sequences out of 15000+600000
+ 24946 strings out of 402560
+ 511172 string characters out of 5437303
+ 938236 words of memory out of 5000000
+ 53677 multiletter control sequences out of 15000+600000
  636913 words of font info for 130 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  107i,12n,110p,847b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Error 1 (driver return code) generating output;
-file main.pdf may not be valid.
+Output written on main.pdf (9 pages).
